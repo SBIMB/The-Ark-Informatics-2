@@ -1,0 +1,93 @@
+<wicket:panel>
+	<div class="searchPanelBreaker">&nbsp;</div>
+	<table width="0%" cellspacing="0"></table>
+	<table width="100%" cellspacing="0" class="dataview" border="0">
+		<tr>
+			<th width="2%">
+				&nbsp;
+			</th>
+			<th width="5%">
+				<wicket:message key="arkRedcap.enabled">id</wicket:message>
+			</th>
+			<th width="5%">
+				<wicket:message key="arkRedcap.id">id</wicket:message>
+			</th>
+			<th width="10%">
+				<wicket:message key="arkRedcap.name">name</wicket:message>
+			</th>
+			<th width="20%">
+				<wicket:message key="arkRedcap.description">description</wicket:message>
+			</th>
+			<th width="20%">
+				<wicket:message key="arkRedcap.redcapUrl">redcapUrl</wicket:message>
+			</th>
+			<th width="5%">
+				<wicket:message key="arkRedcap.content">content</wicket:message>
+			</th>
+			<th width="5%">
+				<wicket:message key="arkRedcap.type">type</wicket:message>
+			</th>
+			<th width="5%">
+				<wicket:message key="arkRedcap.format">format</wicket:message>
+			</th>
+			<th width="10%">
+				<wicket:message key="arkRedcap.study">study</wicket:message>
+			</th>
+			<th width="2%">
+				&nbsp;
+			</th>
+		</tr>
+		<tr wicket:id="arkRedcapList">
+			<td width="2%">
+				&nbsp;
+			</td>
+			<td width="5%">
+				<input type="checkbox" wicket:id="arkRedcap.enabled"></input>
+			</td>
+			<td width="5%">
+				<span wicket:id="arkRedcap.id">id</span>
+			</td>
+			<td width="10%">
+				<a href="#" wicket:id="link">
+					<span wicket:id="arkRedcap.name">name</span>
+				</a>
+			</td>
+			<td width="20%">
+				<span wicket:id="arkRedcap.description">description</span>
+			</td>
+			<td width="20%">
+				<span wicket:id="arkRedcap.redcapUrl">REDCap URL</span>
+			</td>
+			<td width="5%">
+				<span wicket:id="arkRedcap.content">content</span>
+			</td>
+			<td width="5%">
+				<span wicket:id="arkRedcap.type">type</span>
+			</td>
+			<td width="5%">
+				<span wicket:id="arkRedcap.format">format</span>
+			</td>
+			<td width="10%">
+				<span wicket:id="arkRedcap.study">study</span>
+			</td>
+			<td width="2%">
+				&nbsp;
+			</td>
+		</tr>
+		<tfoot>
+			<tr>
+				<td width="2%">
+					&nbsp;
+				</td>
+				<td width="96%" colspan="8">
+					<span wicket:id="navigator" class="a">
+					</span>
+				</td>
+				<td width="2%">
+					&nbsp;
+				</td>
+			</tr>
+		</tfoot>
+	</table>
+	<table width="0%" cellspacing="0"></table>
+</wicket:panel>

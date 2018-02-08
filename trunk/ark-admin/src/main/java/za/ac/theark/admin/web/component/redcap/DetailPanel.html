@@ -1,0 +1,292 @@
+<wicket:panel>
+	&nbsp;
+	<form wicket:id="detailForm">
+		<!--	Layouts and Content to be designed. this is a layout -->
+		<div class="detailsPanelBorder">
+			<div wicket:id="detailFormContainer">
+				<div class="detailPanelBreaker">&nbsp;</div>
+				
+				<!-- Row 1 -->
+				<!-- Left Margin -->
+				<div class="panelContentLeft">&nbsp;</div>
+				
+				<!-- Coulmn 1 -->
+				<div class="fldLabel">
+					<div class="label">
+						<label for="arkRedcap.id">
+							<wicket:message key="arkRedcap.id">
+								ID
+							</wicket:message>
+						</label>
+					</div>
+				</div>
+				
+				<!-- Column 2 -->
+				<div class="fldControl">
+					<div class="label">
+						<input wicket:id="arkRedcap.id" type="text" />
+					</div>
+				</div>
+				
+				<!-- Center Margin -->
+				<div class="panelMargin">&nbsp;</div>
+				
+				<!-- Column 3 -->
+				<div class="fldLabel">
+					<div class="label">
+						<label for="name">
+							<wicket:message key="arkRedcap.name">
+								Name
+							</wicket:message>
+						</label>
+					</div>
+				</div>
+				
+				<!-- Column 4 -->
+				<div class="fldControl">
+					<div class="label">
+						<input wicket:id="arkRedcap.name" type="text" />
+					</div>
+				</div>
+				
+				<div class="detailPanelBreaker">&nbsp;</div>
+				
+				<div class="panelContentLeft">&nbsp;</div>
+				
+				<div class="fldLabel">
+					<div class="label">
+						<label for="description">
+							<wicket:message key="arkRedcap.description">
+								Description
+							</wicket:message>
+						</label>
+					</div>
+				</div>
+				
+				<div class="fldControl">
+					<div class="label">
+						<textarea wicket:id="arkRedcap.description" maxlength="255" cols="25"></textarea>
+					</div>
+				</div>
+				
+				<div class="panelMargin">&nbsp;</div>
+				
+				<div class="fldLabel">
+					<wicket:message key="arkRedcap.study">
+						Study
+					</wicket:message>
+				</div>
+				
+				<div class="fldControl">
+					<select wicket:id="arkRedcap.study">
+						<option>Study 1</option>
+						<option>Study 2</option>
+					</select>
+				</div>
+								
+				<div class="detailPanelBreaker">&nbsp;</div>
+				
+				<div class="panelContentLeft">&nbsp;</div>
+				
+				<div class="fldLabel">
+					<div class="label">
+						<label for="redcapUrl">
+							<wicket:message key="arkRedcap.redcapUrl">
+								Redcap Url
+							</wicket:message>
+						</label>
+					</div>
+				</div>
+				
+				<div class="fldControl">
+					<div class="label">
+						<input wicket:id="arkRedcap.redcapUrl" maxlength="255" cols="25">
+					</div>
+				</div>
+				
+				<div class="panelMargin">&nbsp;</div>
+				
+				<div class="fldLabel">
+					<wicket:message key="arkRedcap.subStudy">
+						Sub Study
+					</wicket:message>
+				</div>
+				
+				<div class="fldControl">
+					<select wicket:id="arkRedcap.subStudy">
+						<option>Study 1</option>
+						<option>Study 2</option>
+					</select>
+				</div>
+				
+				<div class="detailPanelBreaker">&nbsp;</div>
+				
+				<div class="panelContentLeft">&nbsp;</div>
+				
+				<div class="fldLabel">
+					<div class="label">
+						<label for="content">
+							<wicket:message key="arkRedcap.content">
+								Content
+							</wicket:message>
+						</label>
+					</div>
+				</div>
+				
+				<div class="fldControl">
+					<div class="label">
+						<select wicket:id="arkRedcap.content">
+							<option>Report</option>
+							<option>File</option>
+						</select>
+					</div>
+				</div>
+				
+				<div class="panelMargin">&nbsp;</div>
+				
+				<div class="fldLabel">
+					<div class="label">
+						<label for="token">
+							<wicket:message key="arkRedcap.token">
+								Token
+							</wicket:message>
+						</label>
+					</div>
+				</div>
+				
+				<div class="fldControl">
+					<div class="label">
+						<input wicket:id="arkRedcap.token" >
+					</div>
+				</div>
+				
+				<div class="detailPanelBreaker">&nbsp;</div>
+				
+				<div class="panelContentLeft">&nbsp;</div>
+				
+				
+				<div class="fldLabel">
+					<div class="label">
+						<label for="contentFormat">
+							<wicket:message key="arkRedcap.format">
+								Format
+							</wicket:message>
+						</label>
+					</div>
+				</div>
+				
+				<div class="fldControl">
+					<div class="label">
+						<select wicket:id="arkRedcap.format">
+						<option>csv</option>
+						</select>
+					</div>
+				</div>
+				
+				<div class="panelMargin">&nbsp;</div>
+				
+				<div class="fldLabel">
+					<div class="label">
+						<label for="type">
+							<wicket:message key="arkRedcap.type">
+								Type
+							</wicket:message>
+						</label>
+					</div>
+				</div>
+				
+				<div class="fldControl">
+					<div class="label">
+						<select wicket:id="arkRedcap.type">
+							<option>flat</option>
+						</select>
+					</div>
+				</div>
+				
+				<div class="detailPanelBreaker">&nbsp;</div>
+				
+				<div class="panelContentLeft">&nbsp;</div>
+								
+				<div class="fldLabel">
+					<div class="label">
+						<label for="recurrence">
+							<wicket:message key="arkRedcap.redcapSyncRecurrence">
+								Recurrence
+							</wicket:message>
+						</label>
+					</div>
+				</div>
+				
+				<div class="fldControl">
+					<div class="label">
+						<select wicket:id="arkRedcap.redcapSyncRecurrence">
+							<option>Daily</option>
+						</select>
+					</div>
+				</div>
+				
+				<div class="panelMargin">&nbsp;</div>
+				
+				<div class="fldLabel">
+					<div class="label">
+						<label for="startDateTime">
+							<wicket:message key="arkRedcap.startDateTime">
+								Start Date/Time
+							</wicket:message>
+						</label>
+					</div>
+				</div>
+				
+				<div class="fldControl">
+					<div class="label">
+						<span id="arkRedcap.StartDateTime" wicket:id="arkRedcap.startDateTime"></span>
+					</div>
+				</div>
+				<div class="detailPanelBreaker">&nbsp;</div>
+				<div class="panelContentLeft">&nbsp;</div>
+								
+				<div class="fldLabel">
+					<div class="label">
+						<label for="arkRedcap.enabled">
+							<wicket:message key="arkRedcap.enabled">
+								Enabled
+							</wicket:message>
+						</label>
+					</div>
+				</div>
+				
+				<div class="fldControl">
+					<div class="label">
+						<input type="checkbox" wicket:id="arkRedcap.enabled"/>
+					</div>
+				</div>
+				
+				<div class="panelMargin">&nbsp;</div>
+				
+				
+				<div class="detailPanelBreaker">&nbsp;</div>
+			</div>
+			<!-- End detailFormContainer -->
+			<div wicket:id="editButtonContainer">
+				<div class="fldLabel">&nbsp;</div>
+				<div class="fldControl">&nbsp;</div>
+				<div class="panelMargin">&nbsp;</div>
+				<div class="actionButtons">&nbsp;
+					<div class="label">
+						<input wicket:id="test" type="submit" wicket:message="value:button.test"/>&nbsp;
+						<div class="panelMargin">&nbsp;</div>
+						<input wicket:id="save" type="submit" wicket:message="value:button.save" />&nbsp;
+						<div class="panelMargin">&nbsp;</div>
+						<input wicket:id="cancel" type="submit"	wicket:message="value:button.cancel" />
+						<div class="panelMargin">&nbsp;</div>
+						<input wicket:id="delete" type="submit" wicket:message="value:button.delete" />&nbsp;
+				  	</div>
+				</div>
+			</div>
+			<div class="detailPanelBreaker">&nbsp;</div>
+		</div>
+		<!-- End detailsPanelBorder -->
+	</form>
+	<br>&nbsp;
+	<br>&nbsp;
+</wicket:panel>
