@@ -1,0 +1,143 @@
+<wicket:panel>
+	&nbsp;
+	<form wicket:id="detailsForm">
+		<div class="detailsPanelBorder">
+			<div wicket:id="detailFormContainer">
+				<br/>
+				<!-- Row 1 -->
+				<div class="detailPanelBreaker">&nbsp;</div>
+				<div class="panelContentLeft">&nbsp;</div>
+
+				<div class="fldLabel">
+					<label for="affection.disease">Disease:</label>  
+				</div>
+				
+				<div class="fldControl">
+					<select wicket:id="affection.disease">
+					</select>
+				</div>
+				
+				<div class="panelMargin">&nbsp;</div>
+				
+				<div class="fldLabel">
+					<label for="affection.affectionStatus">Affection Status:</label>
+				</div>
+				
+				<div class="fldControl">
+					<select wicket:id="affection.affectionStatus">
+					</select>
+				</div>
+				
+				<div class="detailPanelBreaker">&nbsp;</div>
+				
+				<!-- Row 2 -->
+				<div class="panelContentLeft">&nbsp;</div>
+			
+				<div class="fldLabel">
+					<label for="recordDate">Record Date:</label>
+				</div>
+				
+				<div class="fldControl">
+			 		<input wicket:id="recordDate" />
+			 	</div>
+
+				<div class="panelMargin">&nbsp;</div>
+
+				<div class="detailPanelBreaker">&nbsp;</div>
+				<div class="panelContentLeft">&nbsp;</div>
+
+				<div class="fldLabel">
+					<h4>
+						<wicket:message key="mutations">
+							Mutations:
+						</wicket:message>
+					</h4>
+				</div>
+
+				<table width="100%" cellspacing="0" class="dataview" border="0">
+					<tr>
+						<th width="2%"></th>
+						<th width="47%">Gene:</th>
+						<th width="47%">Position:</th>
+						<th width="2%">&nbsp;</th>
+						<th width="2%">&nbsp;</th>
+					</tr>
+					<tr wicket:id="positionListEditor">
+						<td width="2%"></td>
+						<td width="47&"><select wicket:id="affection.disease.genes"></select></td>
+						<td width="47%"><select wicket:id="affection.positions"></select></td>
+						<td width="2%"><input wicket:id="delete" type="button" wicket:message="value:button.delete"/></td>
+						<td width="2%"></td>
+					</tr>
+					<tfoot>
+					<tr>
+						<td width="2%">&nbsp;</td>
+						<td width="96%" colspan="4"><input wicket:id="new"
+							type="submit" wicket:message="value:button.new" /></td>
+						<td width="2%">&nbsp;</td>
+					</tr>
+				</tfoot>
+				</table>
+				
+				<div class="detailPanelBreaker">&nbsp;</div>
+				
+				<div class="panelContentLeft">&nbsp;</div>
+				
+				<!-- Row 3 -->
+				<form wicket:id="customFieldForm">
+					<div class="fldLabel">
+						<h4>
+							<wicket:message key="customFields">
+								Custom Fields:
+							</wicket:message>
+						</h4>
+					</div>
+					<div wicket:id="dataViewWMC">
+						<div wicket:id="dataViewPanel"></div>
+					</div>
+					<div class="detailPanelBreaker">&nbsp;</div>
+					<div wicket:id="buttonsPanelWMC">
+						<div wicket:id="buttonsPanel"></div>
+					</div>
+				</form>
+				
+				<div class="panelContentLeft">&nbsp;</div>
+				
+				<div>
+					<span wicket:id="navigator" class="a"> </span>
+					<div class="detailPanelBreaker"></div>
+					<div class="centreLabel">
+						<label for="warnSaveLabel"> <wicket:message
+								key="warnSaveLabel">
+							Please "Save"!
+						</wicket:message>
+						</label>
+					</div>
+				</div>
+
+			</div>
+
+			<!--	Row 2 Action Buttons -->
+			<div wicket:id="editButtonContainer">
+				<div class="actionButtons">
+					<input wicket:id="save" type="submit"
+						wicket:message="value:page.save" /> <input wicket:id="cancel"
+						type="submit" wicket:message="value:page.cancel" /> <input
+						wicket:id="delete" type="submit"
+						wicket:message="value:page.delete" />
+				</div>
+			</div>
+			<!--	End buttons -->
+
+			<div class="detailPanelBreaker">&nbsp;</div>
+			<!--	End detailsPanelBorder -->
+		</div>
+		<div class="detailPanelBreaker">&nbsp;</div>
+	</form>
+	<br>
+	&nbsp;
+	<br>
+	&nbsp;
+	<br>
+	&nbsp;
+</wicket:panel>
