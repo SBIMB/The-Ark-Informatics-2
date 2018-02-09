@@ -1,0 +1,63 @@
+<wicket:panel>
+	<div class="wizardStepBorder">
+		<div class="wizardPanelContentLeft">&nbsp;</div>
+		<div wicket:id="header" />
+		<div class="wizardPanelBreaker">&nbsp;</div>
+		
+		<div class="wizardPanelContentLeft">&nbsp;</div>
+		
+		<div class="fldLabel">
+			<wicket:message	key="upload.study">Study:</wicket:message>
+		</div>
+		
+		<div class="fldControl">
+			<select wicket:id="upload.study"> 
+   				<option>1</option>
+   				<option>2</option>
+   				<option>3</option>
+   		    </select>
+		</div>
+		
+		<div class="wizardPanelBreaker">&nbsp;</div>
+		
+		<div class="wizardPanelContentLeft">&nbsp;</div>
+		
+		<div class="fldLabel">
+			<wicket:message key="upload.filename">Filename:</wicket:message>
+		</div>
+		
+		<div class="fldControl">
+	        <input wicket:id="upload.filename" id="upload" type="file"/>
+		</div>
+		
+		<div class="wizardPanelMargin">&nbsp;</div>
+		
+		<div class="fldLabel">
+			<wicket:message	key="upload.delimiterType">Delimiter:</wicket:message> 
+		</div><div class="fldControl">
+			<select wicket:id="upload.delimiterType">
+   				<option>1</option>
+   			</select>
+		</div>
+		
+		<div class="wizardPanelBreaker">&nbsp;</div>
+		
+		<div class="wizardPanelContentLeft">&nbsp;</div>
+		
+		<div class="floatLeft">
+			<div class="note">
+				<wicket:message key="delimiterType.note">[NOTE]</wicket:message>
+			</div>
+		</div>
+		
+		<div class="wizardPanelBreaker">&nbsp;</div>
+		
+		<div class="wizardPanelContentLeft">&nbsp;</div>
+		
+		<div class="floatLeft">
+			<div class="note">
+				<wicket:message key="upload.note">NOTE: Click "Download Template" for an example file. Header columns are required.</wicket:message>
+			</div>
+		</div>
+	</div>
+</wicket:panel>

@@ -1,0 +1,140 @@
+<wicket:panel>
+	<form wicket:id="queryFilterForm">
+		<span wicket:id="feedback">
+			[Feedback]
+		</span>
+		
+		<div class="detailPanel">
+			<table width="100%" cellspacing="0" class="dataview" border="0">
+				<!-- Header row -->
+				<tr>
+					<th width="2%">
+						&nbsp;
+					</th>
+					<th width="5%">
+						<wicket:message	key="fieldCategory">
+							category
+						</wicket:message>
+					</th>
+					<th width="5%">
+						<wicket:message	key="field">
+							field
+						</wicket:message>
+					</th>
+					<th width="5%">
+						<wicket:message	key="operator">
+							field
+						</wicket:message>
+					</th>
+					<th width="10%">
+						<wicket:message	key="value">
+							Value:
+						</wicket:message>
+					</th>
+					<th width="10%">
+						<wicket:message	key="secondValue">
+							Value:
+						</wicket:message>
+					</th>
+					<!--th width="5%">
+						<wicket:message	key="concentration">
+							Concentration:
+						</wicket:message>
+					</th-->
+					
+					<th width="5%">
+						&nbsp;
+					</th>
+					
+					<th width="5%">
+						&nbsp;
+					</th>
+					
+					<th width="2%">
+						&nbsp;
+					</th>
+				</tr>
+				<tbody>
+					<!-- Repeated item row -->
+					<tr wicket:id="queryFilterVOs">
+						<td width="2%">
+							<span wicket:id="row">row</span>
+						</td>
+						<!-- td>
+							<input wicket:id="biospecimenUid" type="text" maxLength="10" size="10"/><span class="requiredHint">*</span>
+						</td>
+						<td>
+							<input wicket:id="quantity" type="text" maxLength="10" size="1"/><span class="requiredHint">*</span>
+						</td-->
+						<td>
+							<select wicket:id="fieldCategory">
+								<option>1</option>
+							</select><span class="requiredHint">*</span>
+						</td>
+						
+						<td>
+							<select wicket:id="queryFilter.field">
+								<option>1</option>
+							</select><span class="requiredHint">*</span>
+						</td>
+						<td>
+							<select wicket:id="queryFilter.operator">
+								<option>1</option>
+							</select><span class="requiredHint">*</span>
+						</td>
+						
+						<td>
+							<input wicket:id="value" type="text"/>
+						</td>
+						<td>
+							<input wicket:id="secondValue" type="text"/>
+						</td>
+						<td>
+							<input wicket:id="copy" type="submit" wicket:message="value:button.copy" />
+						</td>
+						<td>
+							<input wicket:id="delete" type="submit" wicket:message="value:button.delete" />
+						</td>
+						
+						<td width="2%">
+							&nbsp;
+						</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td width="2%">
+							&nbsp;
+						</td>
+						<td width="96%" colspan="7">
+							<input wicket:id="new" type="submit" wicket:message="value:button.new" />
+						</td>
+						<td width="2%">
+							&nbsp;
+						</td>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+		<div class="detailPanelBreaker">
+		</div>
+		<!-- End listPanelBorder -->
+		<div class="actionButtons">
+			<input wicket:id="save" type="submit" wicket:message="value:button.save" />
+			<input wicket:id="saveAndClose" type="submit" wicket:message="value:button.saveAndClose" />
+			<input wicket:id="cancel" type="submit" wicket:message="value:button.cancel" />
+		</div>
+	</form>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+</wicket:panel>
