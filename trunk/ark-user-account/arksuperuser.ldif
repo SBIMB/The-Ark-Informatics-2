@@ -1,0 +1,11 @@
+version: 1
+
+dn: cn=admin@core.wits.ac.za,ou=arkUsers,dc=core,dc=wits,dc=ac,dc=za
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+cn: admin@core.wits.ac.za
+sn: Administrator
+givenName: Admin
+userPassword:: xwvCWGEIMyvSVV2IadMAIhtWfuvuHKW2
+
